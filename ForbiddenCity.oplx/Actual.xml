@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="c-0hQ1zwZn3">
+  <start-date>2013-08-02T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+    <child-resource idref="r5"/>
+    <child-resource idref="r6"/>
+    <child-resource idref="r7"/>
+    <child-resource idref="r8"/>
+  </resource>
+  <resource id="r2">
+    <name>萍钢</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>志泽</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>动画</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r5">
+    <name>小一</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r6">
+    <name>夏贝</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r7">
+    <name>红明</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r8">
+    <name>策划</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t2"/>
+    <child-task idref="t13"/>
+    <child-task idref="t12"/>
+    <child-task idref="t30"/>
+    <child-task idref="t3"/>
+    <child-task idref="t52"/>
+    <child-task idref="t71"/>
+    <child-task idref="t82"/>
+    <child-task idref="t83"/>
+    <child-task idref="t84"/>
+    <child-task idref="t85"/>
+  </task>
+  <task id="t1">
+    <title>引子</title>
+    <type>group</type>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <child-task idref="t7"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>4-5</lit>
+          </run>
+          <run>
+            <lit>页图，小狮子动画</lit>
+          </run>
+          <run>
+            <lit>1</lit>
+          </run>
+          <run>
+            <lit>个</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t2">
+    <title>首页</title>
+    <type>group</type>
+    <child-task idref="t8"/>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+  </task>
+  <task id="t3">
+    <title>小狮子动画</title>
+    <type>group</type>
+    <child-task idref="t55"/>
+  </task>
+  <task id="t5">
+    <title>故事策划</title>
+    <leveled-start>2013-08-08T00:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <start-constraint-date>2013-08-07T16:00:00.000Z</start-constraint-date>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t6">
+    <title>图画</title>
+    <leveled-start>2013-08-12T00:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <prerequisite-task idref="t5"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t7">
+    <title>开发</title>
+    <leveled-start>2013-08-15T00:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t6"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t8">
+    <title>策划</title>
+    <leveled-start>2013-08-12T00:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t5"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t9">
+    <title>美术</title>
+    <leveled-start>2013-08-15T00:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <prerequisite-task idref="t6"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t10">
+    <title>开发</title>
+    <leveled-start>2013-08-15T05:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t7"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t12">
+    <title>个人中心</title>
+    <type>group</type>
+    <start-constraint-date>2013-08-01T16:00:00.000Z</start-constraint-date>
+    <child-task idref="t123"/>
+    <child-task idref="t121"/>
+    <child-task idref="t39"/>
+    <child-task idref="t44"/>
+    <child-task idref="t43"/>
+    <child-task idref="t45"/>
+    <child-task idref="t46"/>
+    <child-task idref="t29"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>个人信息展示：显示封号、用户、注销账号、积分、属性</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>成就</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>收集</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>游戏入口</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>工具：帮助文档、地图</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>制作团队</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t13">
+    <title>登陆注册</title>
+    <type>group</type>
+    <child-task idref="t31"/>
+    <child-task idref="t122"/>
+    <child-task idref="t34"/>
+    <child-task idref="t40"/>
+    <child-task idref="t41"/>
+    <child-task idref="t16"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>引子之后出现，不联网不让玩，注册登陆过后就可以不联网玩了</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>封号：默认提供、也可更改</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>用户名</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>密码</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t16">
+    <title>封号默认提供值</title>
+    <leveled-start>2013-08-12T05:00:00.000Z</leveled-start>
+    <priority>8</priority>
+    <effort>14400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>默认提供、也可更改</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <prerequisite-task idref="t8"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t29">
+    <title>制作团队</title>
+    <priority>8</priority>
+    <effort>28800</effort>
+    <start-constraint-date>2013-08-07T16:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t30">
+    <title>社交分享</title>
+    <type>group</type>
+    <child-task idref="t124"/>
+    <child-task idref="t51"/>
+    <child-task idref="t50"/>
+  </task>
+  <task id="t31">
+    <title>产品原型</title>
+    <leveled-start>2013-08-08T00:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <start-constraint-date>2013-08-07T16:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t34">
+    <title>UI设计</title>
+    <leveled-start>2013-08-21T00:00:00.000Z</leveled-start>
+    <effort>3600</effort>
+    <prerequisite-task idref="t122"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t39">
+    <title>UI设计</title>
+    <leveled-start>2013-08-21T01:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t34"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t40">
+    <title>前端开发</title>
+    <leveled-start>2013-08-21T01:00:00.000Z</leveled-start>
+    <effort>10800</effort>
+    <prerequisite-task idref="t34"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t41">
+    <title>后台</title>
+    <leveled-start>2013-08-02T00:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t43">
+    <title>成就、收集接口</title>
+    <leveled-start>2013-08-08T00:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2013-08-07T16:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t41"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t44">
+    <title>个人信息、成就、收集、游戏入口研发</title>
+    <leveled-start>2013-08-21T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t40"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t45">
+    <title>速成手册</title>
+    <leveled-start>2013-08-23T05:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <prerequisite-task idref="t44"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t46">
+    <title>地图</title>
+    <type>group</type>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+    <child-task idref="t49"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>拖拽、数据交互</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t47">
+    <title>美术</title>
+    <leveled-start>2013-08-23T01:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t39"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t48">
+    <title>策划交互点</title>
+    <leveled-start>2013-08-20T00:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t123"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t49">
+    <title>开发</title>
+    <leveled-start>2013-08-28T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t45"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t50">
+    <title>UI皮肤</title>
+    <leveled-start>2013-08-26T01:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t47"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t51">
+    <title>研发</title>
+    <leveled-start>2013-08-09T00:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t43"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t52">
+    <title>模块1</title>
+    <type>group</type>
+    <child-task idref="t54"/>
+    <child-task idref="t53"/>
+    <child-task idref="t56"/>
+    <child-task idref="t58"/>
+    <child-task idref="t66"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>晨起</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t53">
+    <title>模块UI</title>
+    <leveled-start>2013-08-26T06:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t50"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t54">
+    <title>策划</title>
+    <leveled-start>2013-08-30T04:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t55"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t55">
+    <title>多个动作策划，最好跟模块走</title>
+    <leveled-start>2013-08-20T05:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <prerequisite-task idref="t48"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t56">
+    <title>场景一</title>
+    <type>group</type>
+    <child-task idref="t64"/>
+    <child-task idref="t60"/>
+  </task>
+  <task id="t58">
+    <title>场景二</title>
+    <type>group</type>
+    <child-task idref="t61"/>
+    <child-task idref="t62"/>
+    <child-task idref="t65"/>
+    <child-task idref="t67"/>
+  </task>
+  <task id="t60">
+    <title>开发</title>
+    <leveled-start>2013-08-30T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t49"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t61">
+    <title>美术1</title>
+    <leveled-start>2013-08-28T06:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t53"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t62">
+    <title>美术2</title>
+    <leveled-start>2013-08-22T00:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t64"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t64">
+    <title>美术1</title>
+    <leveled-start>2013-08-21T00:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t122"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t65">
+    <title>开发</title>
+    <leveled-start>2013-09-02T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t60"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t66">
+    <title>场景三</title>
+    <type>group</type>
+    <child-task idref="t68"/>
+    <child-task idref="t69"/>
+  </task>
+  <task id="t67">
+    <title>小动画</title>
+    <leveled-start>2013-08-23T01:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t39"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t68">
+    <title>美术</title>
+    <leveled-start>2013-08-23T00:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t62"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t69">
+    <title>开发</title>
+    <leveled-start>2013-09-04T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t65"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t71">
+    <title>模块2</title>
+    <type>group</type>
+    <child-task idref="t72"/>
+    <child-task idref="t73"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>锻炼</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t72">
+    <title>场景1</title>
+    <type>group</type>
+    <child-task idref="t76"/>
+    <child-task idref="t78"/>
+    <child-task idref="t79"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>练武场、兵器架</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t73">
+    <title>场景2</title>
+    <type>group</type>
+    <child-task idref="t80"/>
+    <child-task idref="t77"/>
+    <child-task idref="t81"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>骑射</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t76">
+    <title>策划</title>
+    <leveled-start>2013-09-02T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t54"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t77">
+    <title>美术</title>
+    <leveled-start>2013-08-27T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t78"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t78">
+    <title>美术</title>
+    <leveled-start>2013-08-23T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t68"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t79">
+    <title>开发</title>
+    <leveled-start>2013-09-05T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t69"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t80">
+    <title>策划</title>
+    <leveled-start>2013-09-03T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t81">
+    <title>开发</title>
+    <leveled-start>2013-09-06T05:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <prerequisite-task idref="t79"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t82">
+    <title>模块3</title>
+    <type>group</type>
+    <child-task idref="t87"/>
+    <child-task idref="t86"/>
+    <child-task idref="t125"/>
+    <child-task idref="t88"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>传膳、做菜、试菜</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t83">
+    <title>模块4</title>
+    <type>group</type>
+    <child-task idref="t95"/>
+    <child-task idref="t89"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>早读</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t84">
+    <title>模块5</title>
+    <type>group</type>
+    <child-task idref="t99"/>
+    <child-task idref="t100"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>上朝</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t85">
+    <title>模块6</title>
+    <type>group</type>
+    <child-task idref="t110"/>
+    <child-task idref="t112"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>娱乐</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t86">
+    <title>主场景原画</title>
+    <leveled-start>2013-08-29T05:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <prerequisite-task idref="t77"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t87">
+    <title>策划</title>
+    <leveled-start>2013-09-04T04:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t88">
+    <title>开发</title>
+    <leveled-start>2013-09-13T05:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <prerequisite-task idref="t81"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t89">
+    <title>场景2</title>
+    <type>group</type>
+    <child-task idref="t91"/>
+    <child-task idref="t92"/>
+    <child-task idref="t93"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>选书：圣训、要读的书</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t91">
+    <title>美术</title>
+    <leveled-start>2013-09-05T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t96"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t92">
+    <title>策划</title>
+    <leveled-start>2013-09-11T00:00:00.000Z</leveled-start>
+    <effort>43200</effort>
+    <prerequisite-task idref="t97"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t93">
+    <title>开发</title>
+    <leveled-start>2013-09-23T05:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <prerequisite-task idref="t98"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t95">
+    <title>场景1</title>
+    <type>group</type>
+    <child-task idref="t96"/>
+    <child-task idref="t97"/>
+    <child-task idref="t98"/>
+  </task>
+  <task id="t96">
+    <title>美术</title>
+    <leveled-start>2013-09-03T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t86"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t97">
+    <title>策划</title>
+    <leveled-start>2013-09-09T05:00:00.000Z</leveled-start>
+    <effort>43200</effort>
+    <prerequisite-task idref="t87"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t98">
+    <title>开发</title>
+    <leveled-start>2013-09-20T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t88"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t99">
+    <title>场景1</title>
+    <type>group</type>
+    <child-task idref="t102"/>
+    <child-task idref="t103"/>
+    <child-task idref="t104"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>上朝情景</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t100">
+    <title>场景2</title>
+    <type>group</type>
+    <child-task idref="t105"/>
+    <child-task idref="t106"/>
+    <child-task idref="t109"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>批奏折</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t102">
+    <title>策划</title>
+    <leveled-start>2013-09-12T05:00:00.000Z</leveled-start>
+    <effort>43200</effort>
+    <prerequisite-task idref="t92"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t103">
+    <title>美术</title>
+    <leveled-start>2013-09-09T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t91"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t104">
+    <title>开发</title>
+    <leveled-start>2013-09-30T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t93"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t105">
+    <title>策划</title>
+    <leveled-start>2013-09-16T00:00:00.000Z</leveled-start>
+    <effort>5400</effort>
+    <prerequisite-task idref="t102"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t106">
+    <title>美术</title>
+    <leveled-start>2013-09-11T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t103"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t109">
+    <title>开发，可写的，可选的</title>
+    <leveled-start>2013-10-01T05:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <prerequisite-task idref="t104"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t110">
+    <title>场景1</title>
+    <type>group</type>
+    <child-task idref="t113"/>
+    <child-task idref="t114"/>
+    <child-task idref="t115"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>外景</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t112">
+    <title>场景2</title>
+    <type>group</type>
+    <child-task idref="t117"/>
+    <child-task idref="t118"/>
+    <child-task idref="t119"/>
+    <child-task idref="t120"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>戏台</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t113">
+    <title>策划</title>
+    <leveled-start>2013-09-16T01:30:00.000Z</leveled-start>
+    <effort>43200</effort>
+    <prerequisite-task idref="t105"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t114">
+    <title>美术</title>
+    <leveled-start>2013-09-13T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t106"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t115">
+    <title>开发</title>
+    <leveled-start>2013-10-04T05:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <prerequisite-task idref="t109"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t117">
+    <title>策划</title>
+    <leveled-start>2013-09-17T06:30:00.000Z</leveled-start>
+    <effort>43200</effort>
+    <prerequisite-task idref="t113"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t118">
+    <title>美术</title>
+    <leveled-start>2013-09-17T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t114"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t119">
+    <title>开发</title>
+    <leveled-start>2013-10-07T05:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <prerequisite-task idref="t115"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t120">
+    <title>动画</title>
+    <effort>86400</effort>
+  </task>
+  <task id="t121">
+    <title>产品原型</title>
+    <leveled-start>2013-08-08T05:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <start-constraint-date>2013-08-02T16:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t31"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t122">
+    <title>UI风格</title>
+    <leveled-start>2013-08-19T09:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2013-08-02T16:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t121"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t123">
+    <title>个人中心相关策划</title>
+    <leveled-start>2013-08-13T00:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <start-constraint-date>2013-08-02T16:00:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>成就体系、收集体系、速成手册、制作团队</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <prerequisite-task idref="t16"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t124">
+    <title>策划分享点和文案</title>
+    <leveled-start>2013-08-27T05:00:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2013-08-02T16:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t55"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t125">
+    <title>游戏元素原画</title>
+    <leveled-start>2013-08-30T06:00:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <start-constraint-date>2013-08-02T16:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t61"/>
+    <assignment idref="r6"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
